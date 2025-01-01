@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.dotheG.stepTest.StepServiceTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2024-12-13T09:30:19" hostname="han-eunseoui-noteubug.local" time="0.525">
+  <properties/>
+  <testcase name="걸음수 업데이트 테스트" classname="com.example.dotheG.stepTest.StepServiceTest" time="0.525">
+    <failure message="java.lang.IllegalStateException: 업데이트할 step객체가 없습니다." type="java.lang.IllegalStateException">java.lang.IllegalStateException: 업데이트할 step객체가 없습니다.
+	at com.example.dotheG.service.StepService.lambda$updateStep$1(StepService.java:58)
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
+	at com.example.dotheG.service.StepService.updateStep(StepService.java:58)
+	at com.example.dotheG.stepTest.StepServiceTest.updateStepsTest(StepServiceTest.java:49)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+</failure>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[WARNING: A Java agent has been loaded dynamically (/Users/han-eunseo/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy-agent/1.14.19/154da3a65b4f4a909d3e5bdec55d1b2b4cbb6ce1/byte-buddy-agent-1.14.19.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+]]></system-err>
+</testsuite>
