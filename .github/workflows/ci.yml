@@ -30,8 +30,7 @@ jobs:
       uses: gradle/actions/setup-gradle@af1da67850ed9a4cedd57bfd976089dd991e2582 # v4.0.0
 
     - name: gradlew 권한 부여
-      working-directory: ./cicd
-      run: chmod +x gradlew
+      run: chmod +x cicd/gradlew
 
     - name: Gradle 빌드 (dev 프로파일 활성화)
       working-directory: ./cicd
