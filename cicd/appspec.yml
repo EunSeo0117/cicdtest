@@ -1,9 +1,8 @@
 version: 0.0
 os: linux
 files:
-    - source: /
-    # EC2 내 배포 위치 설정
-      destination: /app
+    - source: /                        # s3에서 가져올 경로
+      destination: /home/ubuntu/app    # EC2 내 배포 위치 설정
       overwrite: yes
 
 permissions:
