@@ -31,7 +31,7 @@ jobs:
 
     - name: gradlew 권한 부여
       working-directory: ./cicd
-      run: chmod +x ./gradlew
+      run: chmod +x gradlew
 
     - name: Gradle 빌드 (dev 프로파일 활성화)
       working-directory: ./cicd
