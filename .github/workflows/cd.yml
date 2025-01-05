@@ -34,11 +34,11 @@ jobs:
 
     - name: gradlew 권한 부여
       run: chmod +x ./gradlew
-      working-directory: ./cicdtest
+      working-directory: ./cicd
 
     - name: Gradle 빌드
       run: ./gradlew clean build -x test
-      working-directory: ./cicdtest
+      working-directory: ./cicd
 
     - name: AWS 인증 (IAM 사용자 Access key, Secret Key 사용)
       uses: aws-actions/configure-aws-credentials@v1
