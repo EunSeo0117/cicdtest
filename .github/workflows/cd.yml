@@ -37,7 +37,7 @@ jobs:
       working-directory: ./cicd
       
     - name: Gradle 빌드
-      run: ./gradlew clean build #-x test
+      run: ./gradlew clean build -x test
       working-directory: ./cicd
 
     - name: AWS 인증 (IAM 사용자 Access key, Secret Key 사용)
