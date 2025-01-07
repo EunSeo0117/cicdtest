@@ -33,9 +33,9 @@ jobs:
       uses: microsoft/variable-substitution@v1
       with:
         files: |
-          cicd/src/main/resources/application.yml
-          cicd/src/main/resources/yml/application-secret.yml
-          cicd/src/main/resources/yml/application-dev.yml
+          .cicd/src/main/resources/application.yml
+          .cicd/src/main/resources/yml/application-secret.yml
+          .cicd/src/main/resources/yml/application-dev.yml
       env:
         mysql_url: ${{ secrets.DATABASE_URL }}
         mysql_username: ${{ secrets.DATABASE_USERNAME }}
