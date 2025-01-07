@@ -41,6 +41,7 @@ jobs:
         mysql_username: ${{ secrets.DATABASE_USERNAME }}
         mysql_password: ${{ secrets.DATABASE_PASSWORD }}
         jwt_key: ${{ secrets.JWT_KEY }}
+        SPRING_PROFILES_ACTIVE: dev
           
     - name: Gradle set up
       uses: gradle/actions/setup-gradle@af1da67850ed9a4cedd57bfd976089dd991e2582 # v4.0.0
@@ -51,8 +52,6 @@ jobs:
       
     - name: Gradle 빌드
       run: ./gradlew clean build #-x test
-      env:
-        SPRING_PROFILES_ACTIVE: dev
       working-directory: ./cicd
 
     - name: AWS 인증 (IAM 사용자 Access key, Secret Key 사용)
