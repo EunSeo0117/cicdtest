@@ -41,7 +41,7 @@ jobs:
       working-directory: ./cicd
 
     - name: AWS 인증 (IAM 사용자 Access key, Secret Key 사용)
-      uses: aws-actions/configure-aws-credentials@v1
+      uses: aws-actions/configure-aws-credentials@v4
       with:
         aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
