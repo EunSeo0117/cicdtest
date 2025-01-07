@@ -21,7 +21,7 @@ public class Controller {
     public String testRds() {
         Member member = new Member(1L, "test", "1234");
         memberRepository.save(member);
-        return ok;
+        return "ok";
     }
 
 }
