@@ -29,6 +29,11 @@ jobs:
         java-version: '21'
         distribution: 'temurin'
 
+    - name: 작업 디렉토리 출력
+      run: |
+        pwd
+        ls -R
+    
     - name: 환경변수 동적할당
       uses: microsoft/variable-substitution@v1
       with:
