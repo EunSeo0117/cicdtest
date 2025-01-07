@@ -28,25 +28,6 @@ jobs:
       with:
         java-version: '21'
         distribution: 'temurin'
-
-    - name: 작업 디렉토리 출력
-      run: |
-        pwd
-        ls -R
-    
-    - name: 환경변수 동적할당
-      uses: microsoft/variable-substitution@v1
-      with:
-        files: |
-          ./cicd/src/main/resources/application.yml
-          ./cicd/src/main/resources/yml/application-secret.yml
-          ./cicd/src/main/resources/yml/application-dev.yml
-      env:
-        mysql_url: ${{ secrets.DATABASE_URL }}
-        mysql_username: ${{ secrets.DATABASE_USERNAME }}
-        mysql_password: ${{ secrets.DATABASE_PASSWORD }}
-        jwt_key: ${{ secrets.JWT_KEY }}
-        SPRING_PROFILES_ACTIVE: dev
           
     - name: Gradle set up
       uses: gradle/actions/setup-gradle@af1da67850ed9a4cedd57bfd976089dd991e2582 # v4.0.0
