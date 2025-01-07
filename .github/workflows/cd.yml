@@ -41,7 +41,7 @@ jobs:
       working-directory: ./cicd
 
     - name: 환경 변수 적용
-      run: source /etc/profil
+      run: source /etc/profile
       
     - name: AWS 인증 (IAM 사용자 Access key, Secret Key 사용)
       uses: aws-actions/configure-aws-credentials@v4
