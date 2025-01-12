@@ -19,6 +19,8 @@ jobs:
     
     - name: Github-Action 체크아웃
       uses: actions/checkout@v4
+      with:
+        ref: develop
     
     - name: 자바 JDK set up
       uses: actions/setup-java@v4
